@@ -1,67 +1,65 @@
-*{
+* {
   box-sizing: border-box;
 }
-body {font-family:"Montserrat", sans-serif;
-margin:0;
-  
+body {
+  font-family:"Montserrat", sans-serif;
+  margin:0;
 }
 
 .title {
-  font-size: 70px;
-  font-weight: 400;
-  line-height: 78px;
-  text-align: center;
-  vertical-align: middle;
-  color: #515076;
-  width: 846px;
+  width: 846px; 
   height: 78px; 
   left: 217px;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 78px;
   margin-top: 220px;
   margin-right: 217px;
   margin-left: 217px;
   margin-bottom: 110px;
+  text-align: center;
+  vertical-align: middle;
+  color: #515076;
 }
 
-.products-list {
+.products_list {
   display: block;
-  margin: 0;
-  padding: 0;
-  list-style: none; 
+  width: 1110px;
+  height: 1191px;
+  left: 85px;
+  top: 408;
+  border: 1px;
+  list-style: none;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   margin-top: 0px;
-  width: 1110px;
-  height: 1191px;
-  top: 408;
-  left: 85px;
-  border: 1px;
- margin-left: 85px;
- margin-right: 85px;
- margin-bottom: 110px;
+  margin-left: 85px;
+  margin-right: 85px;
+  margin-bottom: 110px;
 }
 
 img {
   width: 290px;
   height: 245px;
-  padding: 0px 0px 0px 0px;
   margin: 25px 0px 30px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 .moisturizing_mousse {
-  background-color: #5150761A;
-  padding: 0px 0px 0px 25px;
   width: 340px;
   height: 573px;
   top: 408px;
   left: 85px;
   border: 1px;
   margin-right: 45px;
+  padding: 0px 0px 0px 25px;
+  background-color: #5150761A;
 }
 
 .moisturizing_mask {
-  background-color: #5150761A;
-  padding: 0px 0px 0px 25px;
   width: 340px;
   height: 573px;
   top: 408px;
@@ -69,11 +67,11 @@ img {
   border: 1px;
   border-color: #515076;
   margin-right: 45px;
+  padding: 0px 0px 0px 25px;
+  background-color: #5150761A;
 }
 
 .face_wash_gel {
-  background-color: #5150761A;
-  padding: 0px 0px 0px 25px;
   width: 340px;
   height: 573px;
   top: 408px;
@@ -81,11 +79,11 @@ img {
   border: 1px;
   border-color: #515076;
   margin-right: 0px;;
+  padding: 0px 0px 0px 25px;
+  background-color: #5150761A;
 }
 
 .Gift_set_1 {
-  background-color: #5150761A;
-  padding: 0px 0px 0px 25px;
   width: 340px;
   height: 573px;
   top: 1026px;
@@ -96,11 +94,11 @@ img {
   margin-right: 45px;
   margin-left: 0px;
   margin-bottom: 0px;
+  padding: 0px 0px 0px 25px;
+  background-color: #5150761A;
 }
 
 .Gift_set_5 {
-  background-color: #5150761A;
-  padding: 0px 0px 0px 25px;
   width: 340px;
   height: 573px;
   top: 1026px;
@@ -109,79 +107,82 @@ img {
   border-color: #515076;
   margin-top: 45px;
   margin-bottom: 0px;
+  padding: 0px 0px 0px 25px;
+  background-color: #5150761A;
 }
 
 .application {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 24px;
-  color: #A5A3B9;
   width: 171px;
   height: 24px;
   top: 708px;
   left: 110px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #A5A3B9;
 }
+
 
 .name {
   font-weight: 700;
   font-size: 20px;
   line-height: 27px;
   letter-spacing: 0;
-  color: #515076;
   margin-top: 5px;
   margin-bottom: 5px;
+  color: #515076;
 }
 
-.description{
-   color: #515076;
+.description {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
   margin: 0px 0px 15px 0px;
+  color: #515076;
 }
 
 .compound {
-   color: #515076;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
+  color: #515076;
 }
 
 .ingredients {
-  color: #515076;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-   list-style: circle;
-   padding-left: 16px;
-   margin-bottom: 25px;
-  
- }
-
- .info {
-  margin-bottom: 5px;
-  margin-top: 5px;
- }
-.price {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: #515076;
+  list-style: circle;
   margin-bottom: 25px;
+  padding-left: 16px;
+  color: #515076;
+}
+
+.info {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.price {
   width: 56px;
   height: 24px;
   top: 932px;
   left: 110px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 25px;
+  color: #515076;
 }
 
 .money {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #515076;
-  margin-left: 161px;
   width: 73px;
   height: 24px;
   top: 932px;
   left: 327px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 161px;
+  color: #515076;
 }
