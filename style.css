@@ -7,8 +7,8 @@ body {
 }
 
 .title {
-  width: 846px; 
-  height: 78px; 
+  width: 846px;
+  height: 78px;
   left: 217px;
   font-weight: 400;
   font-size: 70px;
@@ -78,12 +78,12 @@ img {
   left: 855px;
   border: 1px;
   border-color: #515076;
-  margin-right: 0px;;
+  margin-right: 0px;
   padding: 0px 0px 0px 25px;
   background-color: #5150761A;
 }
 
-.Gift_set_1 {
+.gift_set_1 {
   width: 340px;
   height: 573px;
   top: 1026px;
@@ -98,7 +98,7 @@ img {
   background-color: #5150761A;
 }
 
-.Gift_set_5 {
+.gift_set_5 {
   width: 340px;
   height: 573px;
   top: 1026px;
