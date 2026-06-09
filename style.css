@@ -1,15 +1,25 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family:"Montserrat", sans-serif;
-  margin:0;
+  font-size: 13px;
+}
+
+.dandelion {
+  width: 790px;
+  height: 697px;
+  position: absolute;
+  top: -0px;
+  left: 85px;
+  z-index: -1;
+  background-image: url(images/dandelion.png);
+  background-repeat: no-repeat;
 }
 
 .title {
   width: 846px;
-  height: 78px;
-  left: 217px;
   font-weight: 400;
   font-size: 70px;
   line-height: 78px;
@@ -25,14 +35,12 @@ body {
 .products_list {
   display: block;
   width: 1110px;
-  height: 1191px;
-  left: 85px;
-  top: 408;
   border: 1px;
   list-style: none;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  gap: 45px;
+  justify-content: center;
   margin: 0;
   padding: 0;
   margin-top: 0px;
@@ -41,7 +49,7 @@ body {
   margin-bottom: 110px;
 }
 
-img {
+.images {
   width: 290px;
   height: 245px;
   margin: 25px 0px 30px 0px;
@@ -50,70 +58,55 @@ img {
 
 .moisturizing_mousse {
   width: 340px;
-  height: 573px;
   top: 408px;
   left: 85px;
   border: 1px;
-  margin-right: 45px;
-  padding: 0px 0px 0px 25px;
+  padding: 0px 25px 25px 25px;
   background-color: #5150761A;
 }
 
 .moisturizing_mask {
   width: 340px;
-  height: 573px;
   top: 408px;
   left: 470px;
   border: 1px;
   border-color: #515076;
-  margin-right: 45px;
-  padding: 0px 0px 0px 25px;
+  padding: 0px 25px 25px 25px;
   background-color: #5150761A;
 }
 
 .face_wash_gel {
   width: 340px;
-  height: 573px;
   top: 408px;
   left: 855px;
   border: 1px;
   border-color: #515076;
-  margin-right: 0px;
-  padding: 0px 0px 0px 25px;
+  padding: 0px 25px 25px 25px;
   background-color: #5150761A;
 }
 
 .gift_set_1 {
   width: 340px;
-  height: 573px;
   top: 1026px;
   left: 277px;
   border: 1px;
   border-color: #515076;
-  margin-top: 45px;
-  margin-right: 45px;
-  margin-left: 0px;
-  margin-bottom: 0px;
-  padding: 0px 0px 0px 25px;
+  padding: 0px 25px 25px 25px;
   background-color: #5150761A;
 }
 
 .gift_set_5 {
   width: 340px;
-  height: 573px;
   top: 1026px;
   left: 662px;
   border: 1px;
   border-color: #515076;
-  margin-top: 45px;
-  margin-bottom: 0px;
-  padding: 0px 0px 0px 25px;
+  padding: 0px 25px 25px 25px;
   background-color: #5150761A;
 }
 
 .application {
   width: 171px;
-  height: 24px;
   top: 708px;
   left: 110px;
   font-weight: 400;
@@ -163,26 +156,27 @@ img {
   margin-bottom: 5px;
 }
 
+.footer_cards {
+  display: flex;
+  justify-content: space-between;
+}
+
 .price {
   width: 56px;
-  height: 24px;
   top: 932px;
   left: 110px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: 25px;
   color: #515076;
 }
 
 .money {
-  width: 73px;
-  height: 24px;
+  width: 75px;
   top: 932px;
   left: 327px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  margin-left: 161px;
   color: #515076;
 }
