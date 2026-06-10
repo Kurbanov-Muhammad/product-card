@@ -13,9 +13,9 @@ body {
   position: absolute;
   top: -0px;
   left: 85px;
-  z-index: -1;
-  background-image: url(images/dandelion.png);
+  background-image: url("images/dandelion.png");
   background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .title {
@@ -64,6 +64,7 @@ body {
   padding: 0px 25px 25px 25px;
   background-color: #5150761A;
 }
+
 
 .moisturizing_mask {
   width: 340px;
