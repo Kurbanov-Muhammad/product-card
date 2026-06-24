@@ -1,183 +1,121 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
   font-family:"Montserrat", sans-serif;
   font-size: 13px;
+  margin: 0;
 }
 
-.dandelion {
-  width: 790px;
-  height: 697px;
-  position: absolute;
-  top: -0px;
-  left: 85px;
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.catalog__container {
   background-image: url("images/dandelion.png");
   background-repeat: no-repeat;
-  z-index: -1;
+  background-position: 0 0;
+  padding-top: 220px;
 }
 
-.title {
-  width: 846px;
+.catalog__title {
+  margin: 0px auto 110px auto;
   font-weight: 400;
   font-size: 70px;
   line-height: 78px;
-  margin-top: 220px;
-  margin-right: 217px;
-  margin-left: 217px;
-  margin-bottom: 110px;
   text-align: center;
-  vertical-align: middle;
   color: #515076;
 }
 
-.products_list {
+.card {
+  padding:25px;
+  background-color: #F7F7FA;
+}
+
+.card__image {
   display: block;
-  width: 1110px;
-  border: 1px;
+  margin-bottom: 30px;
+}
+
+.card__category {
+  display: block; 
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 5px;
+  color: #A5A3B9;
+}
+
+.products { 
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 45px;
   justify-content: center;
-  margin: 0;
   padding: 0;
-  margin-top: 0px;
-  margin-left: 85px;
-  margin-right: 85px;
-  margin-bottom: 110px;
 }
 
-.images {
-  width: 290px;
-  height: 245px;
-  margin: 25px 0px 30px 0px;
-  padding: 0px 0px 0px 0px;
-}
-
-.moisturizing_mousse {
+.products__item {
   width: 340px;
-  top: 408px;
-  left: 85px;
-  border: 1px;
-  padding: 0px 25px 25px 25px;
-  background-color: #5150761A;
 }
 
-
-.moisturizing_mask {
-  width: 340px;
-  top: 408px;
-  left: 470px;
-  border: 1px;
-  border-color: #515076;
-  padding: 0px 25px 25px 25px;
-  background-color: #5150761A;
-}
-
-.face_wash_gel {
-  width: 340px;
-  top: 408px;
-  left: 855px;
-  border: 1px;
-  border-color: #515076;
-  padding: 0px 25px 25px 25px;
-  background-color: #5150761A;
-}
-
-.gift_set_1 {
-  width: 340px;
-  top: 1026px;
-  left: 277px;
-  border: 1px;
-  border-color: #515076;
-  padding: 0px 25px 25px 25px;
-  background-color: #5150761A;
-}
-
-.gift_set_5 {
-  width: 340px;
-  top: 1026px;
-  left: 662px;
-  border: 1px;
-  border-color: #515076;
-  padding: 0px 25px 25px 25px;
-  background-color: #5150761A;
-}
-
-.application {
-  width: 171px;
-  top: 708px;
-  left: 110px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 24px;
-  color: #A5A3B9;
-}
-
-
-.name {
+.card__name {
   font-weight: 700;
   font-size: 20px;
   line-height: 27px;
-  letter-spacing: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 0px;
+  padding-bottom: 5px;
   color: #515076;
 }
 
-.description {
+.card__description {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-  margin: 0px 0px 15px 0px;
+  margin: 0px;
+  padding-bottom: 15px;
   color: #515076;
 }
 
-.compound {
+.card__compound {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
   color: #515076;
 }
 
-.ingredients {
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
-  list-style: circle;
-  margin-bottom: 25px;
-  padding-left: 16px;
-  color: #515076;
+.compound__list {
+  padding: 5px 0 0px 8px;
+  margin-left: 8px;
 }
 
-.info {
-  margin-top: 5px;
-  margin-bottom: 5px;
+.compound__ingredient {
+  padding: 5px 0px 0px 0px;
+  margin: 0px;
 }
 
-.footer_cards {
+.card__price {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 25px 0 0 0;
 }
 
-.price {
-  width: 56px;
-  top: 932px;
-  left: 110px;
+.card__price-label {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #515076;
+  color: #515076;  
 }
 
-.money {
-  width: 75px;
-  top: 932px;
-  left: 327px;
+.card__price-value {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #515076;
 }
+
