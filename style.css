@@ -119,3 +119,10 @@ body {
   color: #515076;
 }
 
+.toggle-color-button{
+  background-color: #3498db;
+}
+
+.toggle-color-button.active{
+  background-color:#515076;
+}
