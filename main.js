@@ -12,16 +12,16 @@ const changeCardsColorBtn = document.querySelector('.change-cards-color-btn');
 const aquaColorsHash = '#00FFFF';
 
 changeCardsColorBtn.addEventListener('click', () => {
-  productCards.forEach((card) => card.style.backgroundColor = aquaColorsHash)
+  productCards.forEach((card) => card.style.backgroundColor = aquaColorsHash);
 });
 
 
 const openGoogleBtn = document.querySelector('.open-google');
-const googleURL = "https://google.com"
+const googleURL = "https://google.com";
 
-openGoogleBtn.addEventListener('click', openGoogle)
+openGoogleBtn.addEventListener('click', openGoogle);
 
-function openGoogle () {
+function openGoogle() {
   const answer = confirm('Вы действительно хотите открыть Google');
 
   if (answer === true) {
@@ -29,29 +29,28 @@ function openGoogle () {
   } else {
     return;
   }
-}
+};
 
 
 const outputLogBtn = document.querySelector('.output-console-log');
 
-outputLogBtn.addEventListener('click', () => outputConsoleLog('ДЗ №6'))
+outputLogBtn.addEventListener('click', () => outputConsoleLog('ДЗ №6'));
 
-function outputConsoleLog (message) {
+function outputConsoleLog(message) {
   alert('ДЗ №6')
   console.log(message)
-}
+};
 
 
 const catalogTitle = document.querySelector('.catalog__title');
 
 catalogTitle.addEventListener('mouseenter', (event) => {
-
-console.log(event.target.textContent);
+  console.log(event.target.textContent);
 });
 
 
 const toggleBtn = document.querySelector('.toggle-color-button');
 
-toggleBtn.addEventListener('click',() => {
+toggleBtn.addEventListener('click', () => {
   toggleBtn.classList.toggle('active');
 });
