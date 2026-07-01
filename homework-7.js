@@ -1,17 +1,17 @@
 
 
-let viserTemperature = (city,temp) => {
+let showTemperature = (city,temp) => {
   console.log(`Сейчас в г.${city} температура - ${temp} градусов по Цельсию`);
 };
-viserTemperature('Сочи',35);
+showTemperature('Сочи',35);
 
 
 
 const LIGHT_SPEED = 299792458;
-let checkSpeed = (speed) =>{
-  if(speed > LIGHT_SPEED) {
+let checkSpeed = (speed) => {
+  if (speed > LIGHT_SPEED) {
     console.log("Сверхсветовая скорость");
-  } else if(speed === LIGHT_SPEED) {
+  } else if (speed === LIGHT_SPEED) {
     console.log("Скорость света");
   } else {
     console.log("Субсветовая скорость");
@@ -25,9 +25,9 @@ let productName = "Ноутбук";
 let productPrice = 35000;
 
 let buyProduct = (budget) => {
-  if(budget >= productPrice) {
+  if (budget >= productPrice) {
     console.log(`${productName} приобретён. Спасибо за покупку!`);
-  } else{
+  } else {
     let difference = productPrice - budget;
     console.log(`Вам не хватает ${difference}руб. Пополните баланс`);
   };
