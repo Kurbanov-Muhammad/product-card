@@ -19,7 +19,7 @@ const car = {
   transmission: "DSG"
 };
 
-car.owner = user.name;
+car.owner = user;
 
 
 
@@ -118,7 +118,7 @@ const library = [...books, ...harryPotterBooks];
 
 
 function addProperty(object) {
-  if(object.year>1989) {
+  if (object.year>1989) {
     object.isRare = true;
   } else {
     object.isRare = false;
