@@ -6,44 +6,46 @@ const productsList = document.querySelector('.products');
 
 
 function getCardsCount() {
-  while (true) {
-    const input = prompt("Сколько карточек отобразить? От 1 до 5");
-    const count = parseInt(input, 10);
-    if (isNaN(count) || count < 1 || count > 5) {
-      alert("Некорректный ввод! Будут отображены все 5 карточек.");
-      return 5; 
-    }
-    return count;
+  const input = prompt("Сколько карточек отобразить? От 1 до 5");
+  const count = parseInt(input, 10);
+
+  if (isNaN(count) || count < 1 || count > 5) {
+    alert("Некорректный ввод! Будут отображены все 5 карточек.");
+    return 5; 
   }
+  return count;
 }
+
 function renderProducts(productsArray) {
-productsArray.forEach(product => {
-  const productCopy = productTemplate.content.cloneNode(true);
-  productCopy.querySelector('.card__image').src = `images/${product.id}.png`;
-  productCopy.querySelector('.card__image').alt = `Товар ${product.name}`;
-  productCopy.querySelector('.card__name').textContent = product.name;
-  productCopy.querySelector('.card__category').textContent = product.category;
-  productCopy.querySelector('.card__description').textContent = product.description;
+  const maxCards = getCardsCount();
+  productsArray.forEach((product, index) => {
+    if (index >= maxCards) {
+    return; 
+    }
 
-  const compoundList = productCopy.querySelector('.compound__list');
-  product.ingredients.forEach(ingredient => {
-    const li = document.createElement('li');
-    li.className = 'compound__ingredient';
-    li.textContent = ingredient;
-    compoundList.appendChild(li);
-  });
-  productCopy.querySelector('.card__price-value').textContent = `${product.price.toLocaleString('ru-RU')} ₽`;
-  productsList.appendChild(productCopy);
+    const productCopy = productTemplate.content.cloneNode(true);
+    productCopy.querySelector('.card__image').src = `images/${product.image}.png`;
+    productCopy.querySelector('.card__image').alt = `Товар ${product.name}`;
+    productCopy.querySelector('.card__name').textContent = product.name;
+    productCopy.querySelector('.card__category').textContent = product.category;
+    productCopy.querySelector('.card__description').textContent = product.description;
+
+    const compoundList = productCopy.querySelector('.compound__list');
+    product.ingredients.forEach(ingredient => {
+      const li = document.createElement('li');
+      li.className = 'compound__ingredient';
+      li.textContent = ingredient;
+      compoundList.appendChild(li);
+    });
+    productCopy.querySelector('.card__price-value').textContent = `${product.price.toLocaleString('ru-RU')} ₽`;
+    productsList.appendChild(productCopy);
   });
 }
-const count = getCardsCount();
-const selectedProducts = products.slice(0, count);
-renderProducts(selectedProducts);
-
+renderProducts(products);
 
 const productDescriptions= products.reduce((acc, item) => {
   const singleProductObject = { [item.name]: item.description};
   acc.push(singleProductObject);
   return acc;
-},[]);
+}, []);
 console.log(productDescriptions);
