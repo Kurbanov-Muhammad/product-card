@@ -20,7 +20,7 @@ function renderProducts(productsArray) {
   const maxCards = getCardsCount();
   productsArray.forEach((product, index) => {
     if (index >= maxCards) {
-    return; 
+      return; 
     }
 
     const productCopy = productTemplate.content.cloneNode(true);
