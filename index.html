@@ -20,32 +20,95 @@
       <button class="open-google">Открыть страницу Google.com</button>
       <button class="output-console-log">Вывести значение в консоль лог</button>
       <button class="toggle-color-button">Переключатель цвета кнопки</button>
-      <ul class="products">
-      <template id="product-template">
-        <li class="products__item card">
-          <img src="" alt="" class="card__image">
-          <span class="card__category"></span>
-          <h2 class="card__name"></h2>
-          <p class="card__description"></p>
-          <div class="card__compound compound">
-            <span class="compound__name">Состав: </span>
-            <ul class="compound__list">
+      <button class="reg-btn">Регистрация</button>
 
-            </ul>
-          </div>
-          <div class="card__price">
-            <b class="card__price-label">Цена:</b>
-            <span class="card__price-value"></span>
-          </div>
-        </li>
-      </template>
+      <ul class="products">
+        <template id="product-template">
+          <li class="products__item card">
+            <img src="" alt="" class="card__image">
+            <span class="card__category"></span>
+            <h2 class="card__name"></h2>
+            <p class="card__description"></p>
+            <div class="card__compound compound">
+              <span class="compound__name">Состав: </span>
+              <ul class="compound__list"></ul>
+            </div>
+            <div class="card__price">
+              <b class="card__price-label">Цена:</b>
+              <span class="card__price-value"></span>
+            </div>
+          </li>
+        </template>
       </ul>
     </div>
   </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3 class="footer-description">Product Cards</h3>
+        <p class="footer-slogan">У нас самые лучшие продукты для кожи!</p>
+        <div class="social-icons">
+          <a href="#"><img src="images/telegram.png" alt="телеграм"></a>
+          <a href="#"><img src="images/vk.png" alt="ВК"></a>
+        </div>
+      </div>
+      <div class="footer-subscribe">
+        <p class="subscribe-title">Подпишись на наши акции:</p>
+        <form class="subscribe-form">
+          <input class="subscribe-input" type="email" placeholder="Введите Email..." aria-label="Email" required>
+          <button class="subscribe-btn" type="submit">Подписаться</button>
+        </form>
+      </div>
+      <nav class="footer-navigation">
+        <p class="navigation-title">Быстрые ссылки</p>
+        <ul class="navigation-menu">
+          <li class="footer-menu-item"><a href="#">Главная</a></li>
+          <li class="footer-menu-item"><a href="#">Магазины</a></li>
+          <li class="footer-menu-item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-line"></div>
+      <p class="footer-copyright">www.product-cards.com©all right reserve</p>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <div class="overlay">
+      <form class="reg-form">
+        <div class="modal-content">
+          <label for="firstname">Имя</label>
+          <input type="text" id="firstname" placeholder="Введите Имя" required>
+
+          <label for="lastname">Фамилия</label>
+          <input type="text" id="lastname" placeholder="Введите Фамилию" required>
+
+          <label for="date">Дата рождения</label>
+          <input type="date" id="date" required>
+
+          <label for="login">Логин</label>
+          <input type="text" id="login" placeholder="Введите логин" required>
+
+          <label for="password">Пароль</label>
+          <input type="password" id="password" placeholder="Введите пароль" required>
+
+          <label for="repeatpassword">Повторите пароль</label>
+          <input type="password" id="repeatpassword" placeholder="Повторите пароль" required>
+
+          <button class="close-btn" type="button">X</button>
+          <button class="sign-up" type="submit">Зарегистрироваться</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <script src="main.js"></script>
   <script src="homework-7.js"></script>
   <script src="homework-8.js"></script>
   <script type="module" src="homework-9.js"></script>
   <script type="module" src="homework-10.js"></script>
+  <script type="module" src="homework-11.js"></script>
 </body>
 </html>
