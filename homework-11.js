@@ -1,7 +1,7 @@
 const subscribeForm = document.querySelector('.subscribe-form');
 const subscribeInput = document.querySelector('.subscribe-input');
 
-function createObject(form) {
+function getFormData(form) {
   const formData = new FormData(form);
   const data = Object.fromEntries(formData.entries());
   return data;
@@ -10,7 +10,7 @@ function createObject(form) {
 
 subscribeForm.addEventListener('submit', function(event) {
   event.preventDefault();
-  const formData = createObject(subscribeForm);
+  const formData = getFormData(subscribeForm);
   console.log(formData);
 });
 
@@ -40,7 +40,7 @@ regForm.addEventListener('submit', function(event) {
   if (!isValid || !isPasswordsMatch) {
     alert('Регистрация отклонена');
   } else {
-    user = createObject(regForm);
+    user = getFormData(regForm);
     user.createdOn = new Date();
     console.log(user);
     modal.classList.remove('modal-showed');
