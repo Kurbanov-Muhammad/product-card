@@ -1,12 +1,16 @@
 const subscribeForm = document.querySelector('.subscribe-form');
 const subscribeInput = document.querySelector('.subscribe-input');
 
+function createObject(form) {
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData.entries());
+  return data;
+}
+
 
 subscribeForm.addEventListener('submit', function(event) {
   event.preventDefault();
-  const formData = {
-    email: subscribeInput.value
-  };
+  const formData = createObject(subscribeForm);
   console.log(formData);
 });
 
@@ -23,33 +27,21 @@ closeBtn.addEventListener('click', function() {
   modal.classList.remove('modal-showed');
 });
 
-let user 
+let user;
 
 const regForm = document.querySelector('.reg-form');
-
 regForm.addEventListener('submit', function(event) {
   event.preventDefault();
   const isValid = regForm.checkValidity()
-
   const password = document.querySelector('#password');
   const repeatpassword = document.querySelector('#repeatpassword');
-  const firstName = document.querySelector('#firstname');
-  const lastName = document.querySelector('#lastname');
-  const date = document.querySelector('#date');
-  const login = document.querySelector('#login');
   const isPasswordsMatch = password.value === repeatpassword.value
 
   if (!isValid || !isPasswordsMatch) {
     alert('Регистрация отклонена');
-  }else {
-    user = {
-      firstname: firstName.value,
-      lastname: lastName.value,
-      date: date.value,
-      login: login.value,
-      password: password.value,
-      createdOn: new Date()
-    };
+  } else {
+    user = createObject(regForm);
+    user.createdOn = new Date();
     console.log(user);
     modal.classList.remove('modal-showed');
   };
