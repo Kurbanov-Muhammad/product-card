@@ -20,7 +20,7 @@
       <button class="open-google">Открыть страницу Google.com</button>
       <button class="output-console-log">Вывести значение в консоль лог</button>
       <button class="toggle-color-button">Переключатель цвета кнопки</button>
-      <button class="reg-btn">Регистрация</button>
+      <button class="reg-btn" id="openRegBtn">Регистрация</button>
 
       <ul class="products">
         <template id="product-template">
@@ -75,9 +75,9 @@
     </div>
   </footer>
 
-  <div class="modal">
+  <div class="modal" id="registrationModal">
     <div class="overlay">
-      <form class="reg-form">
+      <form class="reg-form" id="registrationForm">
         <div class="modal-content">
           <label for="firstname">Имя</label>
           <input type="text" name="firstname" id="firstname" placeholder="Введите Имя" required>
@@ -103,12 +103,6 @@
       </form>
     </div>
   </div>
-
-  <script src="main.js"></script>
-  <script src="homework-7.js"></script>
-  <script src="homework-8.js"></script>
-  <script type="module" src="homework-9.js"></script>
-  <script type="module" src="homework-10.js"></script>
-  <script type="module" src="homework-11.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
