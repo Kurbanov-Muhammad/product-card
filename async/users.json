@@ -1,0 +1,26 @@
+{
+"users": [{
+"id": "1",
+"name": "Magomed",
+"surname": "Kurbanov",
+"email": "rvdhb@mail.ru",
+"age": 37,
+"city": "Hasavyrt"
+},
+{
+"id": "2",
+"name": "Ruslan",
+"surname": "Karuhov",
+"email": "rusik@mail.ru",
+"age": 40,
+"city": "Volgograd"
+},
+{
+"id": "3",
+"name": "Arslan",
+"surname": "Ahmedov",
+"email": "ars@mail.ru",
+"age": 10,
+"city": "Sochi"
+}]
+}
